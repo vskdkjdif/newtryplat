@@ -7,6 +7,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpForce;
 
+    [SerializeField] bool isGrounded;
+    [SerializeField] LayerMask groundLayer;
+    [SerializeField] Transform groundCheckPos;
+
     Vector2 moveVector;
     Rigidbody2D playerRB;
 
